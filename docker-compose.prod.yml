@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: biotec-mongo-prod
+    restart: unless-stopped
+    environment:
+      - MONGO_INITDB_DATABASE=biotec_lab
+    volumes:
+      - mongodb_prod_data:/data/db
+    networks:
+      - biotec-prod-network
+    # No exposed ports in production - internal communication only
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: biotec-backend-prod
+    restart: unless-stopped
+    environment:
+      - MONGO_URL=mongodb://mongodb:27017/biotec_lab
+      - DB_NAME=biotec_lab
+      - ENVIRONMENT=production
+    depends_on:
+      - mongodb
+    networks:
+      - biotec-prod-network
+    # No exposed ports - handled by reverse proxy
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: biotec-frontend-prod
+    restart: unless-stopped
+    environment:
+      - REACT_APP_BACKEND_URL=https://your-domain.com
+    depends_on:
+      - backend
+    networks:
+      - biotec-prod-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: biotec-nginx-prod
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - biotec-prod-network
+
+volumes:
+  mongodb_prod_data:
+
+networks:
+  biotec-prod-network:
+    driver: bridge
