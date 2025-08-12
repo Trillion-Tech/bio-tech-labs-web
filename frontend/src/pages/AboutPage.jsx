@@ -31,7 +31,7 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: "Dr. James Mwangi",
+      name: "Moses C.O. Lorre",
       role: "Managing Director",
       description: "15+ years in medical equipment industry",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop"
