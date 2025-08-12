@@ -5,7 +5,7 @@ export const products = [
     category: "Sterilization Equipment",
     description: "High-performance washing and disinfection systems for medical instruments",
     detailedDescription: "The Tuttnauer Washer series provides comprehensive cleaning and disinfection solutions for medical and laboratory instruments. These automated systems ensure thorough cleaning while maintaining instrument integrity and extending their lifespan.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=400&fit=crop",
+    image: "https://www.gimaitaly.com/it/assets/altreimmagini/35562.jpg",
     price: "Contact for Quote",
     features: [
       "Automated washing cycles",
@@ -29,7 +29,7 @@ export const products = [
     category: "Large Sterilizers", 
     description: "Large capacity steam sterilizer for high-volume sterilization needs",
     detailedDescription: "The Tuttnauer 3870M is a large-capacity steam sterilizer designed for facilities with high-volume sterilization requirements. Features advanced controls and monitoring systems for reliable performance.",
-    image: "https://images.unsplash.com/photo-1631815589968-fdb09ade494e?w=500&h=400&fit=crop",
+    image: "https://www.labrepco.com/wp-content/uploads/2018/09/3870M-model.png",
     price: "Contact for Quote",
     features: [
       "Large chamber capacity",
@@ -77,7 +77,7 @@ export const products = [
     category: "Anesthesia Equipment",
     description: "Advanced anesthesia delivery system with integrated monitoring",
     detailedDescription: "The Mindray WATO EX-35 provides reliable anesthesia delivery with integrated patient monitoring, designed for modern operating rooms with advanced safety features.",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=400&fit=crop",
+    image: "https://www.mindray.com/content/dam/xpace/en_gb/products-solutions/products/anesthesia/wato-ex-35/Mindray-Anaesthesia-Wato-EX35-LED-35-800x600-c-default.jpg",
     price: "Contact for Quote",
     features: [
       "Integrated ventilator",
@@ -101,7 +101,7 @@ export const products = [
     category: "Anesthesia Equipment",
     description: "Premium anesthesia workstation with advanced ventilation capabilities",
     detailedDescription: "The WATO EX-65 Pro represents the pinnacle of anesthesia technology, offering advanced ventilation modes, comprehensive monitoring, and intuitive operation for demanding clinical environments.",
-    image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=500&h=400&fit=crop",
+    image: "https://www.mindray.com/content/dam/xpace/en/products-solutions/products/anesthesia/wato-series/wato-ex-65-pro/p82-s3-1.jpg",
     price: "Contact for Quote",
     features: [
       "Advanced ventilation modes",
