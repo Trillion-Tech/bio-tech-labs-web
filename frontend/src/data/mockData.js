@@ -53,7 +53,7 @@ export const products = [
     category: "Autoclaves",
     description: "Fully automated sterilization systems with advanced controls",
     detailedDescription: "State-of-the-art fully automatic autoclaves featuring microprocessor controls, multiple sterilization programs, and comprehensive safety features for reliable sterilization.",
-    image: "https://www.google.com/imgres?q=Fully%20automated%20sterilization%20systems%20with%20advanced%20controls&imgurl=https%3A%2F%2Fwestburg.eu%2Fmedia%2F3321%2Ffile%2FIN-845-PP-0096000_PurePrep%252096%2520No%2520Logo.jpg&imgrefurl=https%3A%2F%2Fwestburg.eu%2Finnuscreen-introduces-benchtop-systems-for-automated-dna%2Frna-extraction&docid=z-gJwXVW4aJT3M&tbnid=yEZXkMWVpcr-iM&vet=12ahUKEwiOpPv174SPAxUvNPsDHaDbDQoQM3oECF8QAA..i&w=2048&h=1365&hcb=2&ved=2ahUKEwiOpPv174SPAxUvNPsDHaDbDQoQM3oECF8QAA",
+    image: "https://westburg.eu/media/3321/file/IN-845-PP-0096000_PurePrep%2096%20No%20Logo.jpg",
     price: "Contact for Quote", 
     features: [
       "Microprocessor controls",
